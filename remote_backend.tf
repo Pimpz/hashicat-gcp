@@ -6,6 +6,7 @@ terraform {
   backend "remote" {
     hostname = "app.terraform.io"
     organization = "vlica-training"
+
     workspaces {
       name = "hashicat-gcp"
     }
